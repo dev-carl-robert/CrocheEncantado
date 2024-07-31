@@ -16,7 +16,7 @@ body {
 header {
     color: #350D0E;
     margin-top: -2rem;
-    height: 15rem;
+    height: 13rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -65,7 +65,7 @@ header {
     width: 100%;
 }
 #banners {
-    max-height: 46.9rem;
+    max-height: 43.4rem;
     overflow: hidden;
 }
 .banner {
@@ -75,6 +75,31 @@ header {
     position: relative;
 }
 .selecionado {
-    transition: 2s ease-in-out;
     display: inline-block;
+}
+
+.principal__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text {
+    font-size: 4rem;
+    display: none;
+}
+.text.selecionado {
+    display: inline-block;
+}
+.destaque1{
+    color: #C6B7AA;
+}
+.destaque2{
+    color: #3C5547;
+}
+.destaque3{
+    color: #6E8186;
+}
+.destaque4{
+    color: #C6B7AA;
 }
