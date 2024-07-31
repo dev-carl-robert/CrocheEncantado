@@ -22,4 +22,4 @@ function alternarBanner() {
 }
 
 // Alternar a cada 6 segundos
-setInterval(alternarBanner, 6000);
+setInterval(alternarBanner, 7000);
