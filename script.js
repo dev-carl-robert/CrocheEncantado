@@ -1,25 +1,20 @@
 let banners = document.querySelectorAll('.banner');
-let texts = document.querySelectorAll('.text');
-let currentIndex = 0;
+let currentBannerIndex = 0;
 
 function alternarBanner() {
-    // Remover a classe 'selecionado' do banner e do texto atual
-    if (banners[currentIndex] && texts[currentIndex]) {
-        banners[currentIndex].classList.remove('selecionado');
-        texts[currentIndex].classList.remove('selecionado');
+    if (banners[currentBannerIndex]) {
+        banners[currentBannerIndex].classList.remove('selecionado');
     }
 
-    // Atualizar o índice para o próximo banner e texto
-    currentIndex = (currentIndex + 1) % banners.length;
-
-    // Adicionar a classe 'selecionado' ao próximo banner e texto
-    if (banners[currentIndex] && texts[currentIndex]) {
-        banners[currentIndex].classList.add('selecionado');
-        texts[currentIndex].classList.add('selecionado');
+    currentBannerIndex = (currentBannerIndex + 1) % banners.length;
+    
+    if (banners[currentBannerIndex]) {
+        banners[currentBannerIndex].classList.add('selecionado');
+        console.log("estou funcionando")
     }
-
-    console.log("Alternando banner e texto");
 }
 
-// Alternar a cada 6 segundos
-setInterval(alternarBanner, 7000);
+
+
+
+setInterval(alternarBanner, 6000);

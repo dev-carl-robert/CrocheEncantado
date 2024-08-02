@@ -14,6 +14,8 @@ body {
 }
 
 header {
+    position: relative;
+    font-size: 2rem;
     color: #350D0E;
     margin-top: -2rem;
     height: 13rem;
@@ -30,14 +32,22 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .logo img {
     height: 100%;
-    width: 20rem;
+    width: 15rem;
 }
+.logo img:hover {
+    opacity: .8;
+}
+
+.text {
+    font-weight: 800;
+}
+
 .navigation {
     display: flex;
-    gap: 10rem;
-    font-size: 2.5rem;
+    gap: 5rem;
     font-weight: 600;
     color: #350D0E;
 }
@@ -65,30 +75,45 @@ header {
 .underline-effect:hover::after {
     width: 100%;
 }
+
+.area__user {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.area__user i {
+    display: flex;
+    font-size: 3rem;
+    color: #350D0E;
+    cursor: pointer;
+}
+
+.area__user i:hover {
+    transform: scale(1.4);
+    opacity: .8;
+}
+
 #banners {
     max-height: 48.9rem;
     overflow: hidden;
 }
+
 .banner {
     display: none;
     height: 100%;
     width: 100%;
     position: relative;
 }
+
 .selecionado {
     display: inline-block;
 }
 
-.principal__text {
-    display: flex;
-    min-width: 3.85rem;
-    justify-content: center;
-    align-items: center;
+.text.underline-effect {
+    cursor: default;
 }
-.text {
-    font-size: 2.5rem;
-    display: none;
-}
+
 .text.selecionado {
     display: inline-block;
 }
